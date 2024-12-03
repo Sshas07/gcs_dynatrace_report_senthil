@@ -1,0 +1,23 @@
+{
+  "scripts": {
+    "test1": "node dt1_parameters.js %npm_config_START_TIME% %npm_config_END_TIME% %npm_config_API_TOKEN%",
+    "test": "node test.js %npm_config_START_TIME% %npm_config_END_TIME% %npm_config_API_TOKEN% %npm_config_APP_NAME1",
+    "testresp": "node test_resptime.js %npm_config_START_TIME% %npm_config_END_TIME% %npm_config_API_TOKEN",
+    "test3": "node test_curl.js",
+    "dev": "npm run test1 %npm_config_START_TIME% %npm_config_END_TIME% %npm_config_API_TOKEN% && npm run test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "child_process": "1.0.2",
+    "fs": "0.0.1-security",
+    "moment-timezone": "^0.5.34",
+    "os": "^0.1.2",
+    "test": "^3.3.4"
+  },
+  "name": "node",
+  "version": "1.0.0",
+  "main": "test.js",
+  "description": ""
+}
